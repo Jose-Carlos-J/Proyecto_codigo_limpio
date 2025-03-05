@@ -1,12 +1,12 @@
 from modelos.producto import Producto
 class GestorInventario():
-    def __init__():
+    def __init__(self,productos:list[Producto]=[]):
+        self.productos=productos
+    def agregar_producto(self,producto:Producto):
         pass
-    def agregar_producto(producto:Producto):
+    def eliminar_producto(self,id_producto:int):
         pass
-    def eliminar_producto(id_producto:int):
+    def filtrar_por_stock_bajo(self)->list[Producto]:
         pass
-    def filtrar_por_stock_bajo()->list[Producto]:
-        pass
-    def actualizar_stock(id_producto:int,cantidad):
+    def actualizar_stock(self,id_producto:int,cantidad):
         pass
