@@ -1,0 +1,20 @@
+📌 Objetivo General Desarrollar un sistema de gestión de inventario que permita administrar productos, registrar ventas, controlar el stock en tiempo real y garantizar seguridad mediante roles de usuario.
+ 
+📌 Funcionalidades Principales
+1.	Gestión de Inventario
+    •	Agregar productos: Nombre, precio, cantidad, categoría y stock mínimo.
+    •	Eliminar productos: Eliminación lógica o física según preferencia.
+    •	Ver inventario: Listado filtrado por categoría, nombre o stock bajo.
+2. Módulo de Ventas
+    •	Registro de ventas: Selección de productos, cantidades y cálculo automático del total.(descuento y validación stock)
+    •	Historial de ventas: Registro con fecha, productos vendidos, total e identificador del empleado.
+3. Usuarios y Seguridad
+    •	Roles diferenciados:
+        o	Administrador:
+            	Gestionar productos y categorías.
+            	Acceder al historial completo de ventas (filtrado por fecha, empleado o producto).
+            	Crear o eliminar cuentas de empleados.
+        o	Empleado:
+            	Solo puede registrar ventas y consultar el inventario.
+    •	Inicio de sesión seguro:
+        o	Almacenamiento de contraseñas con hashing (biblioteca bcrypt).
